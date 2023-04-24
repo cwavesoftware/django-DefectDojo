@@ -760,7 +760,7 @@
                         class="glyphicon glyphicon-chevron-up"></i></a></span></h4>
             </div>
             <div id="vuln_desc" class="panel-body finding-description collapse in">
-              <pre>{{ finding.description|markdown_render|default_if_none:"" }}</pre>
+              {% include "dojo/snippets/finding_description.html" with finding=finding %}
             </div>
         </div>
 
